@@ -1,0 +1,45 @@
+Assets/
+│
+├── _Project/                           <-- Tüm kendi ürettiğimiz oyun dosyaları buraya girer
+│   │
+│   ├── Art/                            <-- Görsel ve 3D varlıklar
+│   │   ├── Animations/                 <-- Animator'lar ve Animasyon klipleri (.anim)
+│   │   ├── Materials/                  <-- Materyaller ve Fiziksel Materyaller (Physics Materials)
+│   │   ├── Models/                     <-- 3D Modeller (.fbx, .obj)
+│   │   ├── Shaders/                    <-- Özel Shader Graph'ler ve HLSL kodları
+│   │   └── Textures/                   <-- Kaplamalar ve normal map'ler
+│   │
+│   ├── Audio/                          <-- Ses varlıkları
+│   │   ├── Mixers/                     <-- AudioMixer dosyaları (Master, SFX, Music)
+│   │   ├── Music/                      <-- Arka plan müzikleri (BGM)
+│   │   └── SFX/                        <-- Ses efektleri
+│   │
+│   ├── Prefabs/                        <-- Sık kullanılan prefab'lar
+│   │   ├── Entities/                   <-- Karakterler, düşmanlar, NPC'ler
+│   │   ├── UI/                         <-- Canvas'lar, butonlar, HUD elemanları
+│   │   └── VFX/                        <-- Parçacık sistemleri ve görsel efektler
+│   │
+│   ├── Scenes/                         <-- Oyun Sahneleri (Bootstrap ile başlar)
+│   │   ├── 00_Bootstrap.unity          <-- Sistemlerin yüklendiği ilk boş sahne
+│   │   ├── 01_MainMenu.unity           <-- Ana menü sahnesi
+│   │   └── 02_Gameplay.unity           <-- Asıl oyunun oynandığı sahne
+│   │
+│   ├── Scripts/                        <-- (Önceki adımda belirlediğimiz kod katmanları)
+│   │   ├── Application/
+│   │   ├── Domain/
+│   │   └── Presentation/
+│   │
+│   ├── Settings/                       <-- Proje genel ayarları ve veri dosyaları
+│   │   ├── Data/                       <-- Oyun verilerini tutan ScriptableObject (.asset) dosyaları
+│   │   ├── Input/                      <-- New Input System'ın "InputActions" dosyası
+│   │   ├── Presets/                    <-- Unity bileşenleri için hazır ayar (Preset) dosyaları
+│   │   └── Rendering/                  <-- URP (Universal Render Pipeline) Asset ve Pipeline ayarları
+│   │
+│   └── UI/                             <-- Arayüz görselleri ve tasarım varlıkları
+│       ├── Fonts/                      <-- TextMeshPro yazı tipleri ve atlasları
+│       ├── Sprites/                    <-- UI için kullanılacak 2D görseller (butunlar, ikonlar)
+│       └── UI_Toolkit/                 <-- (Opsiyonel) Modern UI Toolkit için USS ve UXML dosyaları
+│
+├── ThirdParty/                         <-- Dışarıdan indirdiğimiz Asset Store paketleri
+│                                           (Örn: TextMesh Pro, DOTween, Odin vb. buraya taşınır)
+└── Plugins/                            <-- İşletim sistemine özel kütüphaneler (.dll, .aar vb.)

@@ -1,0 +1,16 @@
+{
+    "name": "Game.Domain",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e8df3dc6b437f51489444fd06b7b5d94"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
