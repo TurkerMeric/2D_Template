@@ -1,5 +1,5 @@
-public interface IDataEncryptor<Tformat>
+public interface IDataEncryptor
 {
-    Tformat Encrypt(Tformat data);
-    Tformat Decrypt(Tformat data);
+    string Encrypt(string data);
+    string Decrypt(string data);
 }

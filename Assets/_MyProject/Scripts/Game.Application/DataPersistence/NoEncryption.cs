@@ -1,7 +1,6 @@
-public class NoEncryption<Tformat> : IDataEncryptor<Tformat>
+public class NoEncryption : IDataEncryptor
 {
-    public Tformat Decrypt(Tformat data) => data;
+    public string Decrypt(string data) => data;
 
-    public Tformat Encrypt(Tformat data) => data;
-
+    public string Encrypt(string data) => data;
 }

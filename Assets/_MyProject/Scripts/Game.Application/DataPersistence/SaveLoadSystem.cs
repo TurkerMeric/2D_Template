@@ -23,7 +23,7 @@ public class SaveLoadSystem : MonoBehaviour
     {
         // Artık yapıcı metotta dosya ismi (fileName) istemiyoruz.
         // Bu sayede aynı '_dataHandler' nesnesini dilediğimiz her dosya için ortak kullanabiliriz.
-        _dataHandler = new FileDataHandler<GameData, string>(
+        _dataHandler = new JsonFileHandler<GameData>(
             new NewtonsoftJsonSerializer<GameData>(),
             new XorEncryptor(_encryptionKey)
         );

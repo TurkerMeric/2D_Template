@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-public class NewtonsoftJsonSerializer<Tdata> : IDataSerializer<Tdata, string>
+public class NewtonsoftJsonSerializer<Tdata> : IStringSerializer<Tdata>
 {
     public Tdata Deserialize(string output) => JsonConvert.DeserializeObject<Tdata>(output);
 

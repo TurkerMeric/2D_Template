@@ -1,6 +1,6 @@
 using System.Text;
 
-public class XorEncryptor : IDataEncryptor<string>
+public class XorEncryptor : IDataEncryptor
 {
     private readonly string _key;
 
