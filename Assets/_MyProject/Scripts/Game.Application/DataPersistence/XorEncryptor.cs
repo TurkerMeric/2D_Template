@@ -22,7 +22,7 @@ public class XorEncryptor : IDataEncryptor<string>
 
     private string XorOperation(string input)
     {
-        StringBuilder output = new StringBuilder();
+        StringBuilder output = new();
         for (int i = 0; i < input.Length; i++)
         {
             // Veriyi anahtarımızdaki karakterlerle XOR işlemine sokuyoruz
