@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SaveLoadSystem : MonoBehaviour
 {
-    private const string _encriptionKey = "turkerMeric";
+    private const string _encryptionKey = "turkerMeric";
     private const string _fileName = "save";
     private readonly GameData _newGameData = new()
     {
@@ -15,7 +15,7 @@ public class SaveLoadSystem : MonoBehaviour
     {
         _dataHandler = new FileDataHandler<GameData, string>
         (new NewtonsoftJsonSerializer<GameData>()
-        , new XorEncryptor(_encriptionKey)
+        , new XorEncryptor(_encryptionKey)
         , _fileName);
     }
     private void Start()
