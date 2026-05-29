@@ -1,8 +1,7 @@
 using UnityEngine;
 
 public class SaveLoadSystem : MonoBehaviour
-{
-    // Kozmetik ve yazım düzeltmeleri yapılmıştır
+{    
     private const string _encryptionKey = "turkerMeric";
     private const string _fileName1 = "save_slot_1";
     private const string _fileName2 = "save_slot_2";
@@ -21,8 +20,6 @@ public class SaveLoadSystem : MonoBehaviour
 
     private void Awake()
     {
-        // Artık yapıcı metotta dosya ismi (fileName) istemiyoruz.
-        // Bu sayede aynı '_dataHandler' nesnesini dilediğimiz her dosya için ortak kullanabiliriz.
         _dataHandler = new JsonFileHandler<GameData>(
             new NewtonsoftJsonSerializer<GameData>(),
             new XorEncryptor(_encryptionKey)
@@ -52,4 +49,5 @@ public class SaveLoadSystem : MonoBehaviour
 public class GameData
 {
     public string Name { get; set; }
+    public string ActiveSceneId { get; set; }
 }
